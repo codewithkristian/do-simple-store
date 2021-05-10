@@ -16,12 +16,7 @@ class ObjectDO implements DurableObject {
 
   async get(request: Request): Promise<Response> {
     const state = await this.state.storage.get("data")
-    let data
-    if (state) {
-      data = (state as string)
-    } else {
-      data = "{}"
-    }
+    const data = state ? (state as string) : "{}"
 
     return new Response(
       data,
