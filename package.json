@@ -6,7 +6,7 @@
   "private": true,
   "dependencies": {
     "esbuild": "^0.11.20",
-    "lodash": "^4.17.21"
+    "zod": "^3.0.0-beta.1"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^2.2.2",
